@@ -43,13 +43,14 @@ $ymdz="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']."?zip=";
 exit;
 }
 
-if($_GET['zip']=='https://github.com/zhulvchao/web/archive/master.zip'){echo "<center><a href='/f'>点击进入爱特文件管理器</a></center>";}
+if($_GET['zip']=='https://github.com/zhulvchao/web/archive/master.zip')
 $RemoteFile = rawurldecode($_GET["zip"]);
 $ZipFile = "master.zip";
 $Dir = "./";
 copy($RemoteFile,$ZipFile) or die("无法复制文件 <b>".$RemoteFile);
 if (zipExtract($ZipFile,$Dir)) {
-echo "<b>Hello！".basename($RemoteFile)."</b> 成功解压文件到当前目录,请访问你的域名进行安装!";
+echo "<b>恭喜你！".basename($RemoteFile)."</b> 安装成功";
+echo "<center><a href='/f'>点击进入文件管理器</a></center>";
 unlink($ZipFile);
 	}
 else {
