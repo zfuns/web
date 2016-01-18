@@ -119,7 +119,7 @@ else
     {
         $content=___codepre(___convert($data,"UTF-8",$charset),null);
     }
-    echo "<div class=\"like\">爱特文本编辑工具</div>\n";
+    echo "<div class=\"like\">文本编辑工具</div>\n";
     echo "<div class=\"love\">\n";
     echo "<form action=\"?path=".urlencode($path)."&charset={$charset}\" method=\"POST\">\n";
     echo "<input type=\"submit\" value=\"保存文件\" />\n";
