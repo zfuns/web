@@ -10,7 +10,7 @@ elseif(($type=trim($_GET['type']))=="" || !is_file(($path=trim($_GET['path']))) 
     header("Location: ./404.php");
     exit;
 }
-xhtml_head("爱特解压");
+xhtml_head("解压");
 echo "<div class=\"like\">\n";
 echo "<a href=\"./index.php?path=".urlencode(dirname($path))."\"]>返回目录</a>解压结果\n";
 echo "</div>\n";
@@ -218,4 +218,5 @@ default :
 }
 echo "</div>\n";
 xhtml_footer();
+
 ?>

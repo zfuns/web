@@ -110,7 +110,7 @@ function ___sendfile()
         $i++;
     }
     $emailbody.="--$systags--";
-    return email($to,"From Aite.me File Manager",$emailbody,$headers);
+    return email($to,"签名:文件系统",$emailbody,$headers);
 }
 function ___basename()
 {

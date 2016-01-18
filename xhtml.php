@@ -11,7 +11,7 @@ echo <<<XHTML
     </head>
     <body>
         <div id="header">
-	    我一直在开辟属于我的天空
+	    -------------------------
         </div>
 
 XHTML;
@@ -19,7 +19,7 @@ XHTML;
 function xhtml_footer() {
 echo <<<XHTML
         <div id="footer">
-	    By：<a href="mailto:xiaoqidun@gmail.com">Xiaoqidun@Gmail.Com</a>
+	    -------------------------
         </div>
     </body>
 </html>

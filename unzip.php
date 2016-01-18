@@ -12,7 +12,7 @@ elseif(!is_file($path=trim($_GET['path'])))
 }
 elseif(!($ziplist=___ziplist($path)))
 {
-    xhtml_head("爱特ZIP工具");
+    xhtml_head("ZIP工具");
     echo "<div class=\"like\">\n";
     echo "<a href=\"./index.php?path=".urlencode(dirname($path))."\"]>返回目录</a>错误提示\n";
     echo "</div>\n";
@@ -22,7 +22,7 @@ elseif(!($ziplist=___ziplist($path)))
     xhtml_footer();
     exit;
 }
-xhtml_head("爱特ZIP工具");
+xhtml_head("ZIP工具");
 if(isset($_POST['z']) && is_array($_POST['z']) && isset($_POST['undir']) && is_dir(trim($_POST['undir'])))
 {
     echo "<div class=\"like\">\n";
