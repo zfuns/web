@@ -37,7 +37,7 @@ else
     if($finfo=$fs->getfinfo()) echo "档案信息：$finfo\n";
     echo "</div>\n";
     echo "<div class=\"like\">\n";
-    echo "爱特解压<a href=\"./index.php?new&path=".urlencode(dirname($path))."&multiple=unpackdir&getcwd=".urlencode($path)."\">目标目录</a>\n";
+    echo "解压<a href=\"./index.php?new&path=".urlencode(dirname($path))."&multiple=unpackdir&getcwd=".urlencode($path)."\">目标目录</a>\n";
     echo "</div>\n";
     echo "<div class=\"love\">\n";
     echo "<form action=\"unpack.php\" method=\"GET\">\n";
@@ -63,7 +63,7 @@ else
     {
         $sencode=mb_list_encodings();
         usort($sencode,"___sortcmp");
-        echo "<div class=\"like\">\n爱特编码转换工具\n</div>\n";
+        echo "<div class=\"like\">\n编码转换工具\n</div>\n";
         echo "<div class=\"love\">\n";
         echo "<form action=\"mbconv.php\" method=\"GET\">\n";
         echo "<input type=\"hidden\" name=\"path\" value=\"$path\" />\n";
@@ -174,7 +174,7 @@ else
         echo "</form>\n";
         echo "</div>\n";
     }
-    echo "<div class=\"like\">\n爱特文件效验工具\n</div>\n";
+    echo "<div class=\"like\">\n文件效验工具\n</div>\n";
     echo "<div class=\"love\">\n";
     echo "md5：";
     if(isset($_GET['md5']))
